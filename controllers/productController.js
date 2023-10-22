@@ -4,7 +4,7 @@ import Product from "../models/productModel.js";
 // Handle fetching all products with pagination
 const handleAllProdcuts = expressAsyncHandler(async (req, res) => {
   const page = parseInt(req.query.page) || 1;
-  const pageSize = parseInt(req.query.pageSize) || 20;
+  const pageSize = parseInt(req.query.pageSize) || 32;
 
   try {
     const products = await Product.find()
