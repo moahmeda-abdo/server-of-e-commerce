@@ -22,13 +22,13 @@ mongoose
   });
 
 // Define CORS options for allowing requests from a specific origin
-const corsOptions = {
-  origin: [
-    "http://localhost:3000" || "https://client-for-ecommerce-ns4i.vercel.app/",
-  ],  // You can change this to your client's origin
-  optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: [
+//     "http://localhost:3000" || "https://client-for-ecommerce-ns4i.vercel.app/",
+//   ],  // You can change this to your client's origin
+//   optionsSuccessStatus: 200,
+// };
+app.use(cors());
 
 // Parse JSON and URL-encoded request bodies
 app.use(express.json());
